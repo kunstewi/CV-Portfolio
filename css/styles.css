@@ -21,6 +21,9 @@
     --danger : #f1646c;
     --dark-blue : #28365f;
     --github : #c47bff;
+    --dark-gray : #171f33;
+    --yellow : #f3c74d;
+    --instagram : #ff4d8b;
 }
 
 /* Reset */
@@ -186,7 +189,7 @@ section.profile .right ul.socials li {
 }
 
 section.profile .right ul.socials li:nth-child(1) a{
-    background: var(--secondary);
+    background: var(--instagram);
 }
 
 section.profile .right ul.socials li:nth-child(1) a:hover{
@@ -372,4 +375,71 @@ margin-bottom: 1rem;
 
 section.skills .skills-wrapper .skill-box{
     margin-bottom: 4rem;
+}
+
+section.skills .skills-wrapper .skill-box .progress-wrap{
+    background: #20294a;
+    height: 6px;
+    width: 100%;;
+    box-shadow: 0px 0px 1px 0.25px #4d79f6;
+    border-radius: 10px;
+    border: 2px solid var(--primary);
+}
+
+section.skills .skills-wrapper .skill-box .progress-wrap .progress-bar{
+    display: block;
+    height: 100%;
+    background: var(--info);
+    width: 0%;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+section.skills .skills-wrapper .skill-box .progress-wrap .progress-bar .tooltip{
+    position: absolute;
+    right: -15px;
+    top: -30px;
+    color: var(--ternary);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+section.counter-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: var(--dark-gray);
+}
+
+section.counter-wrapper > div{
+    display: flex;
+    align-items: center;
+}
+
+section.counter-wrapper > div i{
+    font-size: 42px;
+    margin-right: 5px;
+}
+
+section.counter-wrapper > div:nth-child(1) i{
+    color: var(--yellow);
+}
+
+section.counter-wrapper > div:nth-child(2) i{
+    color: var(--success);
+}
+
+section.counter-wrapper > div:nth-child(3) i{
+    color: var(--dribbble);
+}
+
+section.counter-wrapper > div h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--fade);
+    margin-bottom: 8px;
+}
+
+section.counter-wrapper > div h5{
+    font-size: 14px;
+    color: var(--fade);
 }
