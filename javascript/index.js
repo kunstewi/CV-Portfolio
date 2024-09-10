@@ -77,3 +77,59 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('Number of counters:', counters.length);
 });
+
+//image filter
+
+var $wrapper = $('.portfolio-wrapper');
+
+$wrapper.isotope({
+    filter: '*',
+    layoutMode: 'masonry',
+    animationOptions : {
+        duration: 750,
+        easing:'linear'
+    }
+});
+
+let links = document.querySelectorAll('.tabs a');
+
+    links.forEach(link => {
+
+        let selector = link.dataset.filter;
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            $wrapper.isotope({
+                filter : selector,
+                layoutMode : 'masonry',
+                animationOptions : {
+                    duration: 750,
+                    easing: 'linear'
+                }
+            });
+
+            links.forEach(link =>{
+                link.classList.remove('active');
+            })
+
+            e.target.classList.add('active');
+
+        });
+    })
+
+
+
+// Magnify pop up 
+
+$(document).ready(function() {
+    $('.magnify').magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true
+        },
+        zoom: {
+            enabled: true
+        }
+    });
+});
+

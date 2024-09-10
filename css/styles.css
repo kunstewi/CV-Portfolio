@@ -466,12 +466,20 @@ section.work .wrapper .portfolio .tabs ul li a{
 section.work .wrapper .portfolio .tabs ul li a.active{
     border-color: var(--info);
     color: var(--info);
+    transition: all 0.3s ease-in-out;
 }
 
 section.work .wrapper .portfolio .portfolio-wrapper{
     margin-top: 4rem;
-    display: grid;
+    /*display: grid;
     grid-template-columns: repeat(3, 1fr);  
+    */
+    display: flex;
+}
+
+section.work .wrapper .portfolio-wrapper .item{
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
 }
 
 
