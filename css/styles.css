@@ -24,6 +24,7 @@
     --dark-gray : #171f33;
     --yellow : #f3c74d;
     --instagram : #ff4d8b;
+    --linkedin : #0077b5;
 }
 
 /* Reset */
@@ -209,6 +210,14 @@ section.profile .right ul.socials li:nth-child(3) a{
 }
 
 section.profile .right ul.socials li:nth-child(3) a:hover{
+    background: var(--dark-blue);
+}
+
+section.profile .right ul.socials li:nth-child(4) a{
+    background: var(--linkedin);
+}
+
+section.profile .right ul.socials li:nth-child(4) a:hover{
     background: var(--dark-blue);
 }
 
