@@ -40,6 +40,7 @@ body{
     font-family: 'IBM Plex Sans', sans-serif;
     background: var(--dark);
     -webkit-font-smoothing: antialised;
+    padding-bottom: 4rem;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -629,7 +630,7 @@ section.contact .wrapper .right .form-group > div label{
     margin-bottom: 8px;
 }
 
-section.contact .wrapper .right .form-group > div input{
+section.contact .wrapper .right .form-group > div input, section.contact .wrapper .right .form-group.textarea-wrapper textarea{
     padding: 10px;
     border-radius: 4px;
     background: transparent;
@@ -638,7 +639,7 @@ section.contact .wrapper .right .form-group > div input{
     -webkit-flow-into: 16px;
 }
 
-section.contact .wrapper .right .form-group > div input:focus{
+section.contact .wrapper .right .form-group > div input:focus, section.contact .wrapper .right .form-group.textarea-wrapper textarea:focus{
     border-color: var(--secondary);
     outline: none;
 }
@@ -647,3 +648,26 @@ section.contact .wrapper .right .form-group.textarea-wrapper{
     display: block;
     width: 100%;
 }
+
+section.contact .wrapper .right button{
+    background: var(--secondary);
+    color: var(--pure);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+section.contact .wrapper .right button:hover{
+    background: var(--info);
+}
+
+footer{
+    background: var(--footer);
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--ternary);
+    font-size: 14px;
+}
+
