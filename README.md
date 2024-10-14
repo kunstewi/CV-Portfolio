@@ -6,7 +6,7 @@ Let's be clear here, if you're starting out and just want to copy this website c
 
 I didn't make this website all by myself, this website is a modification of Modern CV by Coder's Gyan.
 
-Here's a link of the original author and the website :
+Thank you so much bro for the guide.
 
 
 
