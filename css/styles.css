@@ -84,6 +84,7 @@ nav .inner button{
     font-size: 14px;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 nav .inner button:hover{
@@ -192,6 +193,7 @@ section.profile .right ul.socials li {
 
 section.profile .right ul.socials li:nth-child(1) a{
     background: var(--instagram);
+    transition: all 0.3s ease-in-out;
 }
 
 section.profile .right ul.socials li:nth-child(1) a:hover{
@@ -200,6 +202,7 @@ section.profile .right ul.socials li:nth-child(1) a:hover{
 
 section.profile .right ul.socials li:nth-child(2) a{
     background: var(--twitter);
+    transition: all 0.3s ease-in-out;
 }
 
 section.profile .right ul.socials li:nth-child(2) a:hover{
@@ -208,6 +211,7 @@ section.profile .right ul.socials li:nth-child(2) a:hover{
 
 section.profile .right ul.socials li:nth-child(3) a{
     background: var(--github);
+    transition: all 0.3s ease-in-out;
 }
 
 section.profile .right ul.socials li:nth-child(3) a:hover{
@@ -216,6 +220,7 @@ section.profile .right ul.socials li:nth-child(3) a:hover{
 
 section.profile .right ul.socials li:nth-child(4) a{
     background: var(--linkedin);
+    transition: all 0.3s ease-in-out;
 }
 
 section.profile .right ul.socials li:nth-child(4) a:hover{
@@ -282,6 +287,7 @@ section.about .content .left button{
     outline: none;
     cursor: pointer;
     border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
 }
 
 section.about .content .left button:hover{
@@ -553,6 +559,7 @@ section.work .wrapper .slider-wrapper{
     cursor: pointer;
     border-radius: 1rem;
     margin-top: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 .project-button:hover {
@@ -650,17 +657,21 @@ section.contact .wrapper .right .form-group.textarea-wrapper{
 }
 
 section.contact .wrapper .right button{
-    background: var(--secondary);
-    color: var(--pure);
-    padding: 10px 20px;
+    background: rgba(77, 121, 246, 0.1);
+    color: var(--info);
+    padding: 4px 8px;
+    font-size: 12px;
     border: none;
-    border-radius: 6px;
+    line-height: 24px;
+    outline: none;
     cursor: pointer;
+    border-radius: 1rem;
+    margin-top: 10px;
     transition: all 0.3s ease-in-out;
 }
 
 section.contact .wrapper .right button:hover{
-    background: var(--info);
+    background: rgba(77, 121, 246, 0.2);
 }
 
 footer{
