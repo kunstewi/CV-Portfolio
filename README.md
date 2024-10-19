@@ -1,4 +1,4 @@
-This is my portfolio website made in vanilla HTML, CSS and JavaScript.
+This is a portfolio website made in vanilla HTML, CSS and JavaScript.
 
 I wanted to see how websites are made without using any library or framework in javascript.
 
